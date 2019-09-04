@@ -6,7 +6,6 @@ class FrequentlyAskedQuestions extends Connection{
 		$request = 'SELECT * FROM FAQ';
 		$object = $pdo->query($request);
 		return $object->fetchAll(PDO::FETCH_ASSOC);
-		// return $test = ['hello World'];
 	}
  }
  $faq = new FrequentlyAskedQuestions();
