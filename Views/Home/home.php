@@ -29,13 +29,17 @@
 		<option value="porto">Porto</option>
 		<option value="bruxelles">Bruxelles</option>
 	</select>
-	<input type="submit" value="Chercher un hotel">
+	<input type="button" value="Chercher un hotel" id="btnHotelRecherche">
 	<input type="button" value="+ Recherches avancées" id="btnRechercheAvancee">
 </form>
 
-<div id="rechercheAvancee">test</div>
+<div id="rechercheAvancee">
+	test
+</div>
 
-
+<div id="hotelRecherche">
+	test2
+</div>
 <script>
  	$(function() {
 	  $('input[name="daterange"]').daterangepicker({
@@ -58,6 +62,15 @@
 		}
 		else{
 			$('#rechercheAvancee').css('display','none');
+		}
+
+	})
+	$('#btnHotelRecherche').on('click',function(){
+		if (($('#hotelRecherche').css('display')=='none')) {
+			$('#hotelRecherche').css('display','block');
+		}
+		else{
+			$('#hotelRecherche').css('display','none');
 		}
 
 	})
