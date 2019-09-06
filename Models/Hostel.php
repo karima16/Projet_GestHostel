@@ -8,7 +8,7 @@ class Hostel extends Connection{
 		$objects = $pdo->query($request);
 		return $objects->fetchAll(PDO::FETCH_ASSOC);
 	}
-}
+}vv
 
 public function getOne($id){
 		$pdo = $this->dbConnection();
