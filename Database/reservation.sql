@@ -1,3 +1,4 @@
+DELETE FROM `reservation`;
 INSERT INTO `reservation` 
 (`reservationId`,`startDate`,`endDate`,`insurance`,`isCancelled`,`childrenQuantity`,`adultQuantity`,`totalPrice`,`roomId`,`userId`) 
 VALUES 

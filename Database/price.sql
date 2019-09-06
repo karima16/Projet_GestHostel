@@ -1,3 +1,4 @@
+DELETE FROM `price`;
 INSERT INTO `price`(`priceId`, `value`, `roomTypeId`, `seasonId`) 
 VALUES 
 (1,50,1,1), 

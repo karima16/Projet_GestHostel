@@ -1,3 +1,4 @@
+DELETE FROM `hostel`;
 INSERT INTO `hostel` 
 (`hostelName`,`hostelStars`,`hostelId`,`add_postCode`,`add_number`,`add_streetName`,`add_country`,`coo_lat`,`coo_long`,`phone`,`email`,`pool`,`valet`,`roomService`,`touristTaxes`,`isDeleted`,`forumId`) 
 VALUES 
@@ -10,14 +11,14 @@ VALUES
 ("Sed Associates",4,9,"61205",582,"Ap #321-7874 Semper. St.","Botswana","-62.37058","147.41574","00339 89 82 40 41","ante.dictum.cursus@Integerid.edu","1","1","1",5,"0",9),
 ("Vehicula Et Rutrum Incorporated",5,10,"15-391",45,"494-3913 Augue. Av.","Fiji","-48.61424","-177.44469","00336 56 20 64 34","sit.amet.dapibus@Cras.com","1","1","1",8,"0",10);
 
-
+DELETE FROM `role`;
 INSERT INTO `role`
 (`roleName`)
 VALUES
 (`Admin`),
 (`Client`)
 
-
+DELETE FROM `user`;
 INSERT INTO `user`
 ( `firstName`, `lastName`,  `email`,  `country`, `phone`, `password`, `roleId`)
 VALUES
@@ -26,7 +27,7 @@ VALUES
 
 
 
-
+DELETE FROM `message`;
 INSERT INTO `message` 
 (`messageContent`,`postDate`,`messageId`,`userId`,`subjectId`,`isActive`) 
 VALUES 
@@ -39,7 +40,7 @@ VALUES
 ("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.","08/10/18",9,9,9,"0"),
 ("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.","06/01/20",10,10,10,"0");
 
-
+DELETE FROM `picture`;
 INSERT INTO `picture` (`pictureId`,`roomId`,`picturePath`) 
 VALUES 
 (1,1,"https://images.pexels.com/photos/1838554/pexels-photo-1838554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),

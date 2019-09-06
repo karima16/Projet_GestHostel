@@ -1,3 +1,4 @@
+DELETE FROM `user`;
 INSERT INTO `user` (`userId`,`firstName`,`lastName`,`email`,`country`,`phone`,`password`,`roleId`)
 VALUES 
 (1,"Lance","Aiko","a.odio.semper@netusetmalesuada.org","Maldives","0496512341","testpassword",1), 
