@@ -30,5 +30,7 @@
 		<option value="bruxelles">Bruxelles</option>
 	</select>
 	<input type="submit" value="Chercher un hotel">
-	<input type="button" value="+ Recherches avancées">
+	<input type="button" value="+ Recherches avancées" id="btnRechercheAvancee">
 </form>
+
+<div id="rechercheAvancee">test</div>
