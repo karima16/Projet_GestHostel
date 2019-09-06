@@ -8,7 +8,7 @@ if(isset($_GET["section"])){
 	// }
 }
 else {
-	require_once("Controllers/Client/HomeController.php");
+	require_once("Controllers/Client/rechercheAvancer.html");
 }
 
 
