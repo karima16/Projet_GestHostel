@@ -1,24 +1,28 @@
 <div class="containerLogin">
 
-    <form action="">
+	<div class="Connecter"> 
+    <form action="" >
     <h2>Inscrivez-Vous</h2>
-    <label for="nom">Nom :</label><input type="text" id="nom" name="nom"><br>
-    <label for="prenom">Prénom:</label><input type="text"id="prenom" name="prenom"><br>
-    <label for="email">Email:</label> <input type="text" id="email" name="email"><br>
-    <label for="telephone">Telephone:</label><input type="text" id="telephone" name="telephone"><br>
+    <label for="nom">Nom :</label><input class="nom" type="text" id="nom" name="nom"><br>
+    <label for="prenom">Prénom:</label><input class="prenom" type="text"id="prenom" name="prenom"><br>
+    <label for="email">Email:</label> <input class="email" type="text" id="email" name="email"><br>
+    <label for="telephone">Telephone:</label><input class="telephone" type="text" id="telephone" name="telephone"><br>
     <label for="pays">Pays:</label> 
-    <select name="pays" id="pays"></select>
+    <select name="pays" id="pays" class="inputFix"></select>
     <br>
     <input type="submit" value ="Confirmer">
     </form>
+	</div>
 
-    <form action="">
+	<div>
+    <form action="" class="Connecter">
     <h2>Connectez-Vous</h2>
-    <label for="login">Login :</label><input type="text" id="login" name="login"><br>
-    <label for="password">Password:</label><input type="password"id="password" name="password"><br>
+    <label>Login :</label><input type="text" id="login" name="login"><br>
+    <label for="password">Password:</label><input class="password" type="text"id="password" name="password"><br>
     <br>
     <input type="submit" value ="Confirmer">
     </form>
+	</div>
 
 </div>
 
