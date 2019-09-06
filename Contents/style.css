@@ -1,9 +1,11 @@
-/* recherche avancée apparait/disparait */
+/* recherche avancée/hotel recherché apparait/disparait */
 #rechercheAvancee{
 	display: none;
 }
-/* ------------------------------------- */
-/*Navgation*/
+#hotelRecherche{
+	display: none;
+}
+/* ------------------------------------- *//*Navgation*/
 
 ul {
   list-style-type: none;
