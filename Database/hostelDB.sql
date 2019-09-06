@@ -13,8 +13,8 @@ CREATE TABLE IF NOT EXISTS `adds` (
   `optionId` int(11) NOT NULL,
   `reservationId` int(11) NOT NULL,
   PRIMARY KEY (`optionId`,`reservationId`),
-  FOREIGN KEY (`reservationId`) REFERENCES `reservation`(`reservationId`),
-  FOREIGN KEY (`optionId`) REFERENCES `option`(`optionId`)
+  KEY `reservationId` (`reservationId`),
+  KEY `optionId` (`optionId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -46,8 +46,8 @@ CREATE TABLE IF NOT EXISTS `existanceoptionroomtype` (
   `optionId` int(11) NOT NULL,
   `roomTypeId` int(11) NOT NULL,
   PRIMARY KEY (`optionId`,`roomTypeId`),
-  FOREIGN KEY(`optionId`) REFERENCES `option`(`optionId`),
-  FOREIGN KEY(`roomTypeId`) REFERENCES `room_type`(`roomTypeId`)
+  KEY `optionId` (`optionId`),
+  KEY `roomTypeId` (`roomTypeId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
