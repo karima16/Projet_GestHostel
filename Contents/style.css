@@ -1,45 +1,31 @@
 .containerLogin{
-    display: flex; /* or inline-flex*/
+    display: flex;
     flex-direction: row;
-    justify-content:space-around  ;
-    align-items: stretch;
-   padding-top: 0;
-   margin: 0;
-   list-style: none;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-
-
-}
-
-.flex-item {
-  
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .Connecter{
  border: 1px solid black;
  background-color: #509BC7;
- font-size: 2em;
- text-align: center;
+ width: 175px;
+ padding:5px;
+ padding-right: 15px;
 
 }
 
-.itemLogin{
-    flex-basis: auto;
-}
 
 .inputFix{
-	width:25%;
+  width:99%;
+   margin:5px;
 }
 
+.inputLogin{
+  margin:5px;
+}
 
-
+.buttonLogin{
+  text-align: center;
+}
   
 

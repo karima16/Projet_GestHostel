@@ -1,26 +1,30 @@
 <div class="containerLogin">
 
 	<div class="Connecter"> 
-    <form action="" >
+    <form action="" method="post">
     <h2>Inscrivez-Vous</h2>
-    <label for="nom">Nom :</label><input type="text" id="nom" name="nom" required><br>
-    <label for="prenom">Prénom:</label><input type="text"id="prenom" name="prenom" required><br>
-    <label for="email">Email:</label> <input type="text" id="email" name="email" required><br>
-    <label for="telephone">Telephone:</label><input type="text" id="telephone" name="telephone" required><br>
+    <label for="nom">Nom :</label><input type="text" id="nom" name="nom" class="inputLogin" required><br>
+    <label for="prenom">Prénom:</label><input type="text"id="prenom" name="prenom" class="inputLogin" required><br>
+    <label for="email">Email:</label> <input type="text" id="email" name="email" class="inputLogin" required><br>
+    <label for="password">Password:</label> <input type="password" id="password" name="password" class="inputLogin" required><br>
+    <label for="passwordConfirm">Password (confirm):</label> <input type="password" id="passwordConfirm" name="passwordConfirm" class="inputLogin" required><br>
+    <label for="telephone">Telephone:</label><input type="text" id="telephone" name="telephone"  class="inputLogin" required><br>
     <label for="pays">Pays:</label> 
-    <select name="pays" id="pays" class="inputFix"></select>
-    <br>
-    <input type="submit" value ="Confirmer">
+    <select name="pays" id="pays" class="inputFix"></select><br>
+    <input type="submit" value ="Confirmer" class="inputLogin">
     </form>
 	</div>
 
+	<div>
+		<h2>OU</h2>
+	</div>
+
 	<div class="Connecter">
-    <form action="">
+    <form action="" method="post">
     <h2>Connectez-Vous</h2>
-    <label for="login">Login :</label><input type="text" id="login" name="login" required><br>
-    <label for="password">Password:</label><input type="password"id="password" name="password" required><br>
-    <br>
-    <input type="submit" value ="Confirmer">
+    <label for="login">Email:</label><input type="text" id="login" name="login" class="inputLogin" required><br>
+    <label for="password">Password:</label><input type="password"id="password" name="password" class="inputLogin" required><br>
+    <input type="submit" value ="Confirmer" class="inputLogin">
     </form>
 	</div>
 
@@ -108,9 +112,4 @@ $("#email").change(function(){
         $("#email").css("borderColor", "red");
     }
 });
-
-
-
-
-
 </script>
