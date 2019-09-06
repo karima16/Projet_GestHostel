@@ -14,7 +14,7 @@ if(isset($_GET["section"])){
 		case 'contact':
 			break;
 		case 'login':
-			require_once("Controllers/Client/LoginController.php")
+			require_once("Controllers/Client/LoginController.php");
 			break;
 		case 'inscription':
 			break;
