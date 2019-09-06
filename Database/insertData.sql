@@ -1,14 +1,14 @@
-INSERT INTO `hostel` (`hostelName`,`hostelStars`,`hostelId`,`add_postCode`,`add_number`,`add_streetName`,`add_country`,`coo_lat`,`coo_long`,`phone`,`email`,`pool`,`valet`,`roomService`,`touristTaxes`,`isDeleted`,`forumId`)
- VALUES ("Sit Amet Industries",3,1,"2395",301,"Ap #994-8950 Dui. Avenue","Andorra","-12.68569","-23.79695","00334 39 11 18 91","laoreet.lectus.quis@maurisMorbi.com","1","1","1",7,"0",1),
-	    ("Tempor Lorem Eget Corp.",5,2,"A71 5NG",310,"898-7999 Elementum, St.","Tanzania","-89.31681","172.477","00338 62 47 37 89","dictum@malesuadafamesac.net","1","1","1",5,"0",2),
-	    ("Tortor At Risus PC",5,3,"56873",552,"Ap #848-259 Hendrerit Rd.","Yemen","9.35313","160.06037","00336 74 62 36 08","facilisis.Suspendisse.commodo@luctus.org","1","1","1",7,"0",3),
-	    ("Cursus Vestibulum Institute",5,4,"273046",589,"637-1479 Et Avenue","Tunisia","41.91041","-27.13483","00339 42 22 76 87","venenatis.lacus.Etiam@nonummyipsum.com","1","1","1",7,"0",4),
-	    ("Auctor Industries",2,5,"76456",621,"617 Morbi St.","Thailand","-89.90333","30.7262","00335 74 43 10 70","Class@nascetur.ca","1","1","1",5,"0",5),
-	    ("Parturient Company",2,6,"38737",124,"Ap #580-9472 Quis, Road","Curaçao","-39.19013","23.39703","00339 51 05 51 08","pede.Cum@nullaCraseu.org","1","1","1",7,"0",6),
-	    ("Vulputate Ullamcorper Magna Limited",3,7,"579773",639,"P.O. Box 943, 237 Proin St.","Tuvalu","17.55356","84.69438","00334 77 26 55 44","natoque@consequat.edu","1","1","1",6,"0",7),
-	    ("Nulla Dignissim Maecenas Limited",5,8,"484161",357,"5381 Imperdiet Av.","Syria","52.89302","-51.65803","00338 07 19 67 51","Aenean@egettinciduntdui.com","1","1","1",10,"0",8),
-	    ("Sed Associates",4,9,"61205",582,"Ap #321-7874 Semper. St.","Botswana","-62.37058","147.41574","00339 89 82 40 41","ante.dictum.cursus@Integerid.edu","1","1","1",5,"0",9),
-	    ("Vehicula Et Rutrum Incorporated",5,10,"15-391",45,"494-3913 Augue. Av.","Fiji","-48.61424","-177.44469","00336 56 20 64 34","sit.amet.dapibus@Cras.com","1","1","1",8,"0",10),
+INSERT INTO `hostel` 
+(`hostelName`,`hostelStars`,`hostelId`,`add_postCode`,`add_number`,`add_streetName`,`add_country`,`coo_lat`,`coo_long`,`phone`,`email`,`pool`,`valet`,`roomService`,`touristTaxes`,`isDeleted`,`forumId`) 
+VALUES 
+("Sit Amet Industries",3,1,"2395",301,"Ap #994-8950 Dui. Avenue","Andorra","-12.68569","-23.79695","00334 39 11 18 91","laoreet.lectus.quis@maurisMorbi.com","1","1","1",7,"0",1),("Tempor Lorem Eget Corp.",5,2,"A71 5NG",310,"898-7999 Elementum, St.","Tanzania","-89.31681","172.477","00338 62 47 37 89","dictum@malesuadafamesac.net","1","1","1",5,"0",2),
+("Tortor At Risus PC",5,3,"56873",552,"Ap #848-259 Hendrerit Rd.","Yemen","9.35313","160.06037","00336 74 62 36 08","facilisis.Suspendisse.commodo@luctus.org","1","1","1",7,"0",3),("Cursus Vestibulum Institute",5,4,"273046",589,"637-1479 Et Avenue","Tunisia","41.91041","-27.13483","00339 42 22 76 87","venenatis.lacus.Etiam@nonummyipsum.com","1","1","1",7,"0",4),
+("Auctor Industries",2,5,"76456",621,"617 Morbi St.","Thailand","-89.90333","30.7262","00335 74 43 10 70","Class@nascetur.ca","1","1","1",5,"0",5),
+("Parturient Company",2,6,"38737",124,"Ap #580-9472 Quis, Road","Curaçao","-39.19013","23.39703","00339 51 05 51 08","pede.Cum@nullaCraseu.org","1","1","1",7,"0",6),
+("Vulputate Ullamcorper Magna Limited",3,7,"579773",639,"P.O. Box 943, 237 Proin St.","Tuvalu","17.55356","84.69438","00334 77 26 55 44","natoque@consequat.edu","1","1","1",6,"0",7),
+("Nulla Dignissim Maecenas Limited",5,8,"484161",357,"5381 Imperdiet Av.","Syria","52.89302","-51.65803","00338 07 19 67 51","Aenean@egettinciduntdui.com","1","1","1",10,"0",8),
+("Sed Associates",4,9,"61205",582,"Ap #321-7874 Semper. St.","Botswana","-62.37058","147.41574","00339 89 82 40 41","ante.dictum.cursus@Integerid.edu","1","1","1",5,"0",9),
+("Vehicula Et Rutrum Incorporated",5,10,"15-391",45,"494-3913 Augue. Av.","Fiji","-48.61424","-177.44469","00336 56 20 64 34","sit.amet.dapibus@Cras.com","1","1","1",8,"0",10);
 	    ("Morbi Accumsan Incorporated",4,11,"107318",472,"160-9833 Mus. St.","Bulgaria","-12.3516","-59.69838","00331 16 08 60 55","justo@pede.edu","1","1","1",10,"0",11),
 	    ("Ante Incorporated",1,12,"00-309",18,"144-7074 Viverra. Av.","Latvia","27.61947","170.67909","00333 33 04 25 94","tristique.ac.eleifend@sedhendrerita.co.uk","1","1","1",7,"0",12),
 	    ("Nam Consequat Consulting",4,13,"50284",509,"P.O. Box 115, 1942 Integer Road","Holy See (Vatican City State)","8.02796","75.16875","00334 78 31 70 35","arcu.iaculis.enim@leoCrasvehicula.edu","1","1","1",5,"0",13),
@@ -49,3 +49,14 @@ INSERT INTO `hostel` (`hostelName`,`hostelStars`,`hostelId`,`add_postCode`,`add_
 	    ("Non Leo Limited",4,48,"960140",608,"924-3850 Purus, Av.","Åland Islands","-33.57214","16.82126","00335 45 99 71 16","Aliquam.fringilla.cursus@Curabiturvel.edu","1","1","1",6,"0",48),
 	    ("Sed Inc.",1,49,"163629",466,"6603 Neque. Ave","Holy See (Vatican City State)","88.92492","-45.2245","00334 33 99 62 64","et.commodo.at@condimentumDonecat.edu","1","1","1",7,"0",49),
 	    ("Suspendisse Associates",5,50,"65042",51,"8775 In, Rd.","Rwanda","77.1416","-67.3287","00331 67 50 56 95","faucibus.Morbi.vehicula@feugiatLorem.edu","1","1","1",10,"0",50);
+
+INSERT INTO `message` 
+(`messageContent`,`postDate`,`messageId`,`userId`,`subjectId`,`isActive`) 
+VALUES 
+("Lorem ipsum dolor","21/10/18",1,1,1,"1"),("Lorem ipsum dolor sit amet, consectetuer","28/09/19",2,2,2,"1"),
+("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.","10/03/20",3,3,3,"1"),
+("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sed","17/03/19",4,4,4,"1"),
+("Lorem","02/12/18",5,5,5,"1"),("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur","05/05/20",6,6,6,"1"),
+("Lorem ipsum dolor sit amet,","21/08/19",7,7,7,"1"),("Lorem ipsum","21/06/20",8,8,8,"1"),
+("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.","08/10/18",9,9,9,"0"),
+("Lorem ipsum dolor sit amet, consectetuer adipiscing elit.","06/01/20",10,10,10,"0");
