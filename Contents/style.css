@@ -1,0 +1,8 @@
+.containerLogin{
+    display: flex;
+    flex-direction: row;
+}
+
+.itemLogin{
+    flex-basis: auto;
+}
