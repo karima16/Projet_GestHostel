@@ -1,6 +1,6 @@
 <?php 
-require_once("../../../Models/Hostels.php");
-$_SESSION["id"] = $_GET["hostel"];
+require_once("../../../Models/Hostel.php");
+$_SESSION["hostelId"] = $_GET["hostel"];
 
 if(isset($_POST["choice"])){
 	if($_POST["choice"] === "yes"){
@@ -9,7 +9,7 @@ if(isset($_POST["choice"])){
 			
 			$con->deleteOne();		
 			
-			header("Location:index.php?section=selectAll");
+			header("Location:index.php?section=HostelsSelectAll");
 		}
 		catch(PDOException $e)
 		{
@@ -18,11 +18,11 @@ if(isset($_POST["choice"])){
 	}
 	else {
 
-		header("Location:index.php?section=selectAll");
+		header("Location:index.php?section=HostelsSelectAll");
 	}
 }
 $p = "";
-$hostels = $con->getOne($_SESSION["id"]);
+$hostels = $con->getOne($_SESSION["hostelId"]);
 foreach ($hostels as $hostel) {
 	$p = $hostel["hostelName"];	
 }

@@ -3,7 +3,8 @@ require_once("../../Models/Hostel.php");
 
 try
 {
-	$table = "<table>";
+	$table = "<table
+	>";
 	$table .= "<tr><th></th><th>id</th><th>Nom de l'hotel</th><th>Autre</th><th></th></tr>";
 	$hostels = $con->getAll();
 	foreach ($hostels as $hostel) {
@@ -19,7 +20,7 @@ try
 	}
 	$table.="</table>";
 
-	require_once("Views/Admin/selectAll.php");
+	require_once("View/Admin/selectAll.php");
 
 }
 catch(PDOException $e)

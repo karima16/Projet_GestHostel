@@ -11,10 +11,10 @@ try
 		$table .= '<td>' . $hostel['hostelId'] . '</td>';
 		$table .= '<td>' . $hostel['hostelName'] . '</td>';
 		$table .= '<td>' . $hostel['hostelStars'] . '</td>';
-		$table .= '<td>' .$hostel["postcode"] . '</td>';
-		$table .= '<td>' .$hostel["streetName"] . '</td>';
-		$table .= '<td>' .$hostel["number"] . '</td>';
-		$table .= '<td>' .$hostel["country"] . '</td>';
+		$table .= '<td>' .$hostel["add_postcode"] . '</td>';
+		$table .= '<td>' .$hostel["add_streetName"] . '</td>';
+		$table .= '<td>' .$hostel["add_number"] . '</td>';
+		$table .= '<td>' .$hostel["add_country"] . '</td>';
 		$table .= '<td><a class="btn-delete" href="index.php?section=delete&hostel=' . $hostel["hostelId"].'">&#128465;</a></td></tr>';
 	}
 	$table.="</table>";
