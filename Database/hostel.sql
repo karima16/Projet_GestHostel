@@ -1,27 +1,7 @@
--- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1:3306
--- Generation Time: Sep 04, 2019 at 12:55 PM
--- Server version: 5.7.23
--- PHP Version: 7.2.10
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `hostel`
 --
-
+START TRANSACTION;
 -- --------------------------------------------------------
 
 --
@@ -47,12 +27,27 @@ DROP TABLE IF EXISTS `checking`;
 CREATE TABLE IF NOT EXISTS `checking` (
   `checkId` int(11) NOT NULL AUTO_INCREMENT,
   `userId` int(11) NOT NULL,
-  `checkIn`  datetime NULL,
-  `checkOut` datetime NULL,
+  `checkIn` datetime DEFAULT NULL,
+  `checkOut` datetime DEFAULT NULL,
   `hostelId` int(11) NOT NULL,
   PRIMARY KEY (`checkId`),
   FOREIGN KEY (`userId`) REFERENCES `user`(`userId`),
   FOREIGN KEY (`hostelId`) REFERENCES `hostel`(`hostelId`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `existanceoptionroomtype`
+--
+
+DROP TABLE IF EXISTS `existanceoptionroomtype`;
+CREATE TABLE IF NOT EXISTS `existanceoptionroomtype` (
+  `optionId` int(11) NOT NULL,
+  `roomTypeId` int(11) NOT NULL,
+  PRIMARY KEY (`optionId`,`roomTypeId`),
+  FOREIGN KEY(`optionId`) REFERENCES `option`(`optionId`)
+  FOREIGN KEY(`roomTypeId`) REFERENCES `room_type`(`roomTypeId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -133,13 +128,27 @@ CREATE TABLE IF NOT EXISTS `message` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `option`
+--
+
+DROP TABLE IF EXISTS `option`;
+CREATE TABLE IF NOT EXISTS `option` (
+  `optionId` int(11) NOT NULL AUTO_INCREMENT,
+  `optionName` varchar(50) NOT NULL,
+  `optionPrice` decimal(10,2) NOT NULL,
+  `isPossible` tinyint(1) NOT NULL,
+  PRIMARY KEY (`optionId`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+--
 -- Table structure for table `picture`
 --
 
 DROP TABLE IF EXISTS `picture`;
 CREATE TABLE IF NOT EXISTS `picture` (
   `pictureId` int(11) NOT NULL AUTO_INCREMENT,
-  `picturePath` varchar(255) NULL,
+  `picturePath` varchar(255) DEFAULT NULL,
   `roomId` int(11) NOT NULL,
   PRIMARY KEY (`pictureId`),
   FOREIGN KEY (`roomId`) REFERENCES `room`(`roomId`)
@@ -155,7 +164,6 @@ DROP TABLE IF EXISTS `price`;
 CREATE TABLE IF NOT EXISTS `price` (
   `priceId` int(11) NOT NULL AUTO_INCREMENT,
   `value` decimal(10,2) NOT NULL,
-  -- `roomId` int(11) NOT NULL,
   `roomTypeId` int(11) NOT NULL,
   `seasonId` int(11) NOT NULL,
   PRIMARY KEY (`priceId`),
@@ -256,11 +264,6 @@ CREATE TABLE IF NOT EXISTS `room_type` (
   PRIMARY KEY (`roomTypeId`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `room_type`
---
-
-
 -- --------------------------------------------------------
 
 --
@@ -277,7 +280,6 @@ CREATE TABLE IF NOT EXISTS `season` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
--- //CONTINUER ICI à partir de SUBJECT 
 
 --
 -- Table structure for table `subject`
@@ -316,8 +318,6 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`userId`),
   FOREIGN KEY (`roleId`) REFERENCES `role`(`roleId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
