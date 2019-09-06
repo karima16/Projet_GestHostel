@@ -3,9 +3,11 @@ session_start();
 require_once("Views/Pages/header.php");
 // require_once("view/menu/menu.php");
 if(isset($_GET["section"])){
-	// switch ($_GET["section"]) {
-		
-	// }
+	switch ($_GET["section"]) {
+		case "login": 
+			require_once("Controllers/Client/LoginController.php");
+			break;
+	}
 }
 else {
 	require_once("Controllers/Client/HomeController.php");
