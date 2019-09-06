@@ -7,6 +7,9 @@ if(isset($_GET["section"])){
 		case "login": 
 			require_once("Controllers/Client/LoginController.php");
 			break;
+		case "room": 
+			require_once("Controllers/Client/RoomController.php");
+			break;
 	}
 }
 else {
