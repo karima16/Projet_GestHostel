@@ -11,7 +11,7 @@
     <label for="telephone">Telephone:</label><input type="text" id="telephone" name="telephone"  class="inputLogin" required><br>
     <label for="pays">Pays:</label> 
     <select name="pays" id="pays" class="inputFix"></select><br>
-    <input type="submit" value ="Confirmer" class="inputLogin">
+    <input type="submit" value ="Confirmer" class="inputLogin" id="confirmButton">
     </form>
 	</div>
 
@@ -46,14 +46,23 @@ $.ajax({
     }
 });
 
+let nomO = false;
+let prenomO = false;
+let emailO = false;
+let telephoneO = false;
+let passwordO = false;
+let passwordConfO = false;
+
 $("#nom").keypress(function(){
     let regex = "^[a-zA-Z]{4,55}$";
     let nom = $("#nom").val();
     if(nom.match(regex)){
         $("#nom").css("borderColor", "green");
+        nomO = true;
     }
     else{
         $("#nom").css("borderColor", "red");
+        nomO = false
     }
 });
 
@@ -62,9 +71,17 @@ $("#nom").change(function(){
     let nom = $("#nom").val();
     if(nom.match(regex)){
         $("#nom").css("borderColor", "green");
+        nomO = true;
     }
     else{
         $("#nom").css("borderColor", "red");
+        nomO = false
+    }
+    if(nomO && prenomO && emailO && telephoneO && passwordO && passwordConfirmO ){
+        $("#confirmButton").prop( "disabled", false );
+    }
+    else{
+        $("#confirmButton").prop( "disabled", true );
     }
 });
 
@@ -73,9 +90,11 @@ $("#prenom").keypress(function(){
     let prenom = $("#prenom").val();
     if(prenom.match(regex)){
         $("#prenom").css("borderColor", "green");
+        prenomO = true;
     }
     else{
         $("#prenom").css("borderColor", "red");
+        prenomO = false;
     }
 });
 
@@ -84,9 +103,17 @@ $("#prenom").change(function(){
     let prenom = $("#prenom").val();
     if(prenom.match(regex)){
         $("#prenom").css("borderColor", "green");
+        prenomO = true;
     }
     else{
         $("#prenom").css("borderColor", "red");
+        prenomO = false;
+    }
+    if(nomO && prenomO && emailO && telephoneO && passwordO && passwordConfirmO ){
+        $("#confirmButton").prop( "disabled", false );
+    }
+    else{
+        $("#confirmButton").prop( "disabled", true );
     }
 });
 
@@ -96,9 +123,11 @@ $("#email").keypress(function(){
     let email = $("#email").val();
     if(email.match(regex)){
         $("#email").css("borderColor", "green");
+        emailO = true;
     }
     else{
         $("#email").css("borderColor", "red");
+        emailO = false;
     }
 });
 
@@ -107,9 +136,17 @@ $("#email").change(function(){
     let email = $("#email").val();
     if(email.match(regex)){
         $("#email").css("borderColor", "green");
+        emailO = true;
     }
     else{
         $("#email").css("borderColor", "red");
+        emailO = false;
+    }
+    if(nomO && prenomO && emailO && telephoneO && passwordO && passwordConfirmO ){
+        $("#confirmButton").prop( "disabled", false );
+    }
+    else{
+        $("#confirmButton").prop( "disabled", true );
     }
 });
 
@@ -118,9 +155,11 @@ $("#telephone").keypress(function(){
     let telephone = $("#telephone").val();
     if(telephone.match(regex)){
         $("#telephone").css("borderColor", "green");
+        telephoneO = true;
     }
     else{
         $("#telephone").css("borderColor", "red");
+        telephoneO = false;
     }
 });
 
@@ -129,9 +168,17 @@ $("#telephone").change(function(){
     let telephone = $("#telephone").val();
     if(telephone.match(regex)){
         $("#telephone").css("borderColor", "green");
+        telephoneO = true;
     }
     else{
         $("#telephone").css("borderColor", "red");
+        telephoneO = false;
+    }
+    if(nomO && prenomO && emailO && telephoneO && passwordO && passwordConfirmO ){
+        $("#confirmButton").prop( "disabled", false );
+    }
+    else{
+        $("#confirmButton").prop( "disabled", true );
     }
 });
 
@@ -140,9 +187,11 @@ $("#password").keypress(function(){
     let password = $("#password").val();
     if(password.match(regex)){
         $("#password").css("borderColor", "green");
+        passwordO = true;
     }
     else{
         $("#password").css("borderColor", "red");
+        passwordO = false;
     }
 });
 
@@ -151,13 +200,51 @@ $("#password").change(function(){
     let password = $("#password").val();
     if(password.match(regex)){
         $("#password").css("borderColor", "green");
+        passwordO = true;
     }
     else{
         $("#password").css("borderColor", "red");
+        passwordO = false;
+    }
+    if(nomO && prenomO && emailO && telephoneO && passwordO && passwordConfirmO ){
+        $("#confirmButton").prop( "disabled", false );
+    }
+    else{
+        $("#confirmButton").prop( "disabled", true );
     }
 });
 
+$("#passwordConfirm").keypress(function(){
+    let regex = "^[a-zA-Z0-9._%+-]{6,30}$";
+    let password = $("#passwordConfirm").val();
+    if(password.match(regex)){
+        $("#passwordConfirm").css("borderColor", "green");
+        passwordConfirmO = true;
+    }
+    else{
+        $("#passwordConfirm").css("borderColor", "red");
+        passwordConfirmO = false;
+    }
+});
 
+$("#passwordConfirm").change(function(){
+    let regex = "^[a-zA-Z0-9._%+-]{6,30}$";
+    let password = $("#passwordConfirm").val();
+    if(password.match(regex)){
+        $("#passwordConfirm").css("borderColor", "green");
+        passwordConfirmO = true;
+    }
+    else{
+        $("#passwordConfirm").css("borderColor", "red");
+        passwordConfirmO = false;
+    }
+    if(nomO && prenomO && emailO && telephoneO && passwordO && passwordConfirmO ){
+        $("#confirmButton").prop( "disabled", false );
+    }
+    else{
+        $("#confirmButton").prop( "disabled", true );
+    }
+});
 
 
 </script>
