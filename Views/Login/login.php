@@ -112,4 +112,52 @@ $("#email").change(function(){
         $("#email").css("borderColor", "red");
     }
 });
+
+$("#telephone").keypress(function(){
+    let regex = "^[0-9]{4,12}";
+    let telephone = $("#telephone").val();
+    if(telephone.match(regex)){
+        $("#telephone").css("borderColor", "green");
+    }
+    else{
+        $("#telephone").css("borderColor", "red");
+    }
+});
+
+$("#telephone").change(function(){
+    let regex = "^[0-9]{4,12}";
+    let telephone = $("#telephone").val();
+    if(telephone.match(regex)){
+        $("#telephone").css("borderColor", "green");
+    }
+    else{
+        $("#telephone").css("borderColor", "red");
+    }
+});
+
+$("#password").keypress(function(){
+    let regex = "^[a-zA-Z0-9._%+-]{6,30}$";
+    let password = $("#password").val();
+    if(password.match(regex)){
+        $("#password").css("borderColor", "green");
+    }
+    else{
+        $("#password").css("borderColor", "red");
+    }
+});
+
+$("#password").change(function(){
+    let regex = "^[a-zA-Z0-9._%+-]{6,30}$";
+    let password = $("#password").val();
+    if(password.match(regex)){
+        $("#password").css("borderColor", "green");
+    }
+    else{
+        $("#password").css("borderColor", "red");
+    }
+});
+
+
+
+
 </script>
