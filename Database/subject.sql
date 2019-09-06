@@ -1,3 +1,4 @@
+DELETE FROM `subject`;
 INSERT INTO `subject` (`subjectId`,`subjectTitle`,`subjectContent`,`isActive`,`postDate`,`forumId`,`userId`) 
 VALUES 
 (1,"test 1", "content 1", "1", "11/12/16",1 ,1),
