@@ -116,5 +116,10 @@ ul {
 .buttonLogin{
   text-align: center;
 }
+
+.roomImg{
+    width: 500px;
+    height: auto;
+}
   
 
