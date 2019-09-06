@@ -29,6 +29,7 @@
 <script>
 let uri = "https://restcountries.eu/rest/v2/all";
 $.ajax({
+
     url : uri,
 	type : 'GET',
 	dataType : 'html',
@@ -40,4 +41,76 @@ $.ajax({
         }
     }
 });
+
+$("#nom").keypress(function(){
+    let regex = "^[a-zA-Z]{4,55}$";
+    let nom = $("#nom").val();
+    if(nom.match(regex)){
+        $("#nom").css("borderColor", "green");
+    }
+    else{
+        $("#nom").css("borderColor", "red");
+    }
+});
+
+$("#nom").change(function(){
+    let regex = "^[a-zA-Z]{4,55}$";
+    let nom = $("#nom").val();
+    if(nom.match(regex)){
+        $("#nom").css("borderColor", "green");
+    }
+    else{
+        $("#nom").css("borderColor", "red");
+    }
+});
+
+$("#prenom").keypress(function(){
+    let regex = "^[a-zA-Z]{4,55}$";
+    let prenom = $("#prenom").val();
+    if(prenom.match(regex)){
+        $("#prenom").css("borderColor", "green");
+    }
+    else{
+        $("#prenom").css("borderColor", "red");
+    }
+});
+
+$("#prenom").change(function(){
+    let regex = "^[a-zA-Z]{4,55}$";
+    let prenom = $("#prenom").val();
+    if(prenom.match(regex)){
+        $("#prenom").css("borderColor", "green");
+    }
+    else{
+        $("#prenom").css("borderColor", "red");
+    }
+});
+
+
+$("#email").keypress(function(){
+    let regex = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}";
+    let email = $("#email").val();
+    if(email.match(regex)){
+        $("#email").css("borderColor", "green");
+    }
+    else{
+        $("#email").css("borderColor", "red");
+    }
+});
+
+$("#email").change(function(){
+    let regex = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}";
+    let email = $("#email").val();
+    if(email.match(regex)){
+        $("#email").css("borderColor", "green");
+    }
+    else{
+        $("#email").css("borderColor", "red");
+    }
+});
+
+
+
+
+
 </script>
