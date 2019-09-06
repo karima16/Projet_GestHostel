@@ -5,15 +5,15 @@
         <!-- Breadcrumbs-->
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="index.html">Dashboard</a>
+            <a href="index.html">Tableau de Bord</a>
           </li>
-          <li class="breadcrumb-item active">Blank Page</li>
+          <li class="breadcrumb-item active">Page Blanche (Model)</li>
         </ol>
 
         <!-- Page Content -->
-        <h1>Blank Page</h1>
+        <h1>Page Blanche (Model)</h1>
         <hr>
-        <p>This is a great starting point for new custom pages.</p>
+        <p>Ceci est le corp de la page . (Inserer ici les formulaires, tables, etc ...)</p>
 
       </div>
       <!-- /.container-fluid -->

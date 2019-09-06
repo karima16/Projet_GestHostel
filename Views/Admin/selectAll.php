@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-</head>
-<body>
-	<h1>Tous les hôtels:</h1>
-	<?= $table ?>
-</body>
-</html>
+
+        <!-- Page Content -->
+   		<h1>GESTION HOTEL</h1>
+        <hr>
+          <div >Table des hotels:</div>
+
+          <div ><?= $table ?></div>
+
+          <div >DATE ET HEURE DE LA DERNIERE MAJ</div>
+ 
+      <!-- /.container-fluid -->
