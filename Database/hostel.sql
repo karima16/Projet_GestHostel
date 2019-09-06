@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `existanceoptionroomtype` (
   `optionId` int(11) NOT NULL,
   `roomTypeId` int(11) NOT NULL,
   PRIMARY KEY (`optionId`,`roomTypeId`),
-  FOREIGN KEY(`optionId`) REFERENCES `option`(`optionId`)
+  FOREIGN KEY(`optionId`) REFERENCES `option`(`optionId`),
   FOREIGN KEY(`roomTypeId`) REFERENCES `room_type`(`roomTypeId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -262,7 +262,7 @@ CREATE TABLE IF NOT EXISTS `room_type` (
   `roomTypeId` int(11) NOT NULL AUTO_INCREMENT,
   `roomTypeName` varchar(50) NOT NULL,
   PRIMARY KEY (`roomTypeId`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
