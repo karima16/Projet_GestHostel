@@ -275,8 +275,8 @@ DROP TABLE IF EXISTS `season`;
 CREATE TABLE IF NOT EXISTS `season` (
   `seasonId` int(11) NOT NULL AUTO_INCREMENT,
   `seasonName` varchar(20) NOT NULL,
-  `startDate` datetime NOT NULL,
-  `endDate` datetime NOT NULL,
+  `startDate` varchar(20) NOT NULL,
+  `endDate` varchar(20) NOT NULL,
   PRIMARY KEY (`seasonId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
