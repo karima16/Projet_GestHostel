@@ -10,6 +10,23 @@ VALUES
 ("Sed Associates",4,9,"61205",582,"Ap #321-7874 Semper. St.","Botswana","-62.37058","147.41574","00339 89 82 40 41","ante.dictum.cursus@Integerid.edu","1","1","1",5,"0",9),
 ("Vehicula Et Rutrum Incorporated",5,10,"15-391",45,"494-3913 Augue. Av.","Fiji","-48.61424","-177.44469","00336 56 20 64 34","sit.amet.dapibus@Cras.com","1","1","1",8,"0",10);
 
+
+INSERT INTO `role`
+(`roleName`)
+VALUES
+(`Admin`),
+(`Client`)
+
+
+INSERT INTO `user`
+( `firstName`, `lastName`,  `email`,  `country`, `phone`, `password`, `roleId`)
+VALUES
+(`Balthazar`, `Picsou`, `b.picsou@gmail.com`, `CanardVille`, `04/123456`, 'Test1234=', (SELECT `roleId` FROM `role` WHERE `roleName` LIKE `Admin`))
+(`Riri`, `Duck`, `riri.duck@gmail.com`, `CanardVille`, `04/123456`, 'Test1234=', (SELECT `roleId` FROM `role` WHERE `roleName` LIKE `Client`))
+
+
+
+
 INSERT INTO `message` 
 (`messageContent`,`postDate`,`messageId`,`userId`,`subjectId`,`isActive`) 
 VALUES 

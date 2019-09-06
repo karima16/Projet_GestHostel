@@ -262,7 +262,7 @@ CREATE TABLE IF NOT EXISTS `room_type` (
   `roomTypeId` int(11) NOT NULL AUTO_INCREMENT,
   `roomTypeName` varchar(50) NOT NULL,
   PRIMARY KEY (`roomTypeId`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
