@@ -1,3 +1,8 @@
+/* recherche avancée apparait/disparait */
+#rechercheAvancee{
+	display: none;
+}
+/* ------------------------------------- */
 /*Navgation*/
 
 ul {
